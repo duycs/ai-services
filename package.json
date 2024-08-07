@@ -1,13 +1,13 @@
 {
-  "name": "gemini-nodejs",
+  "name": "ai-services",
   "version": "1.0.0",
-  "description": "NodeJS REST-API to interact with Google Gemini",
+  "description": "gemini, openai services",
   "main": "app.js",
   "scripts": {
     "build": "rm -rf dist/* && tsc",
     "start": "node dist/app.js"
   },
-  "author": "Pablo Blanco",
+  "author": "duycs",
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.1.3",
