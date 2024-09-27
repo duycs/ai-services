@@ -28,12 +28,30 @@ npm run start
 ```
 
 ## Docker
-```rm -rf node_modules package-lock.json```
-```docker build -t duycs/ai-services . --platform linux/amd64```
-```docker push duycs/ai-services```
+```sh
+rm -rf node_modules package-lock.json
+```
 
-```sudo docker pull duycs/ai-services```
+```sh
+docker build -t duycs/ai-services . --platform linux/amd64
+```
 
-```sudo docker run --name ai-services  -p 8080:8080 duycs/ai-services```
-```sudo docker run --name ai-services  -p 8080:8080 -d duycs/ai-services```
-```sudo ufw allow 8080```
+```sh
+docker push duycs/ai-services
+```
+
+```sh
+sudo docker pull duycs/ai-services
+```
+
+```sh
+sudo docker run --name ai-services  -p 8081:8080 duycs/ai-services
+```
+
+```sh
+sudo docker run --name ai-services  -p 8081:8080 -d duycs/ai-services
+```
+
+```sh
+sudo ufw allow 8081
+```
